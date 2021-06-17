@@ -11,7 +11,7 @@ export default function Button(props) {
       <Wrapper>
         <IconWrapper>
           {/* <Ring ring={require("../icons/checkIcon.svg")} /> */}
-          <Icon src={require("../icons/checkIcon.svg")} />
+          {/* <Icon src={require("../icons/checkIcon.svg")} /> */}
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "View Image Slideshow"}</Title>

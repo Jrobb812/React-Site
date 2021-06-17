@@ -12,7 +12,7 @@ function HeroSection() {
       <Wrapper>
         <ContentWrapper>
           <TextWrapper>
-            <Title>Welcome to Uno</Title>
+            <Title>simplicity is</Title> <Title2>UNO</Title2>
             <Description>Uno multi-platform design application.</Description>
             <Button title="Continue to site:" subtitle="-->" />
           </TextWrapper>
@@ -28,24 +28,42 @@ export default HeroSection
 const Wrapper = styled.div`
   background: linear-gradient(
     180deg,
-    ${themes.light.sage4} 0%,
-    ${themes.light.sage1} 100%
+    ${themes.dark.dmBackground} 100%,
+    ${themes.dark.dmBackground} 100%,
   );
+  height: 100%;
 `
 const ContentWrapper = styled.div`
   max-width: 1234px;
   margin: 0 auto;
   padding: 200px 30px;
+  justify-self: center;
+  align-content: center;
 `
 const TextWrapper = styled.div`
   max-width: 360px;
   display: grid; //these two lines create spacing between title and description, don't have to use margins that aren't universally adjusting themselves for differently sized screens
   gap: 30px;
+  justify-self: center;
+  align-content: center;
 `
 const Title = styled(H1)`
-  color: ${themes.light.lmOffWhite};
+  color: ${themes.light.lmOffBlack};
+    font-style: normal;
+    font-family: "Raleway";
+    display: grid;
+    align-content: center;
+    justify-content: center;
 `
 
 const Description = styled(MediumText)`
   color: ${themes.light.lmBlack};
+`
+const Title2 = styled(H1)`
+    color: ${themes.light.lmOffBlack};
+    font-weight: bold;
+    letter-spacing: 6px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 `
